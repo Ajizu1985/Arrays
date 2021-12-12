@@ -4,14 +4,14 @@
 
 int main ()
     {
-   double arr[20];
-   int i;
-    for(i=1; i<20; i++)
-        {    
-    arr[i]= arr[i-2] + arr[i-1];
-    printf("arr[%d]=%d\n", i, arr[i]);
+    int n=10, F[n]; 
+    F[0] = 1;
+    F[1] = 1; 
+    printf("F[0]=%d\n", F[0]);
+    printf("F[1]=%d\n", F[1]);
+    for(int k=2; k<n; k++){
+    F[k] = F[k-1] + F[k-2];
+    printf("F[%d]=%d\n", k, F[k]);
     }
-    
     return 0;
-
-    }
+}
