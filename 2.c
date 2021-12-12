@@ -3,16 +3,13 @@
 #include <math.h>
 
 int main ()
+{
+  int arr[5], i, A=3, res;
+
+    for(i=0; i<5; i++)
     {
-   int arr[4], i;
-    for(i=0; i<4; i++)
-    {
-    printf("Enter %d element:", i);
-    scanf("%d", &arr[i]);
-    }
-    for(i=0; i<4; i++)
-    {
-    printf("arr[%0.1f]=%0.1f\t", i, pow(2, arr[i]));
+    res = pow (A, i);
+    printf("Power of %d = %d\n", A, res);
     }
     return 0;
 }
