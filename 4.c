@@ -4,11 +4,11 @@
 
 int main ()
     {
-   int arr[4], i, A=2, D=4, t;
-    for(i=0; i<4; i++)
-    {
-    t = (A * pow(D, i));
-    printf("arr[%d]=%d\t", i, t);
+   float A=1, D=2;
+   int n=5, arr[n], i; 
+
+    for(i=0; i<n; i++){
+    printf("arr[%d]=%f\n", i, (pow(D, i) * A));
     }
     return 0;
 }
